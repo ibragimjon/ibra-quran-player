@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;800;900&display=swap');
+
+
+*{
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    margin: 0;
+    background:url('./qur\'an\ phots.jpg') ;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    text-align: center;
+}
+
+
+.container{
+    width: 500px;
+    color: white;
+    box-shadow: 0px 0px 50px 20px rgba(34, 60, 80, 0.26);
+    border-radius: 15px;
+    padding: 2rem;
+}
+
+.image-container{
+    width: 200px;
+    height: 200px;
+    margin: 100px auto;
+}
+
+.image-container img{
+    width: inherit;
+    height: inherit;
+    border-radius: 100%;
+    object-fit: cover;
+    animation: imageRotate 10s  linear infinite ;
+    animation-play-state: paused;
+}
+
+@keyframes imageRotate {
+    from{
+        transform: rotate(0);
+    }
+
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+
+.container.play img{
+    animation-play-state: running;
+}
+
+.time{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    font-size:1.5rem ;
+}
+
+#title{
+    font-weight: 300;
+}
+
+.progress-container{
+    background-color: white;
+    width: 80%;
+    margin: 1rem auto;
+    height: 6px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.progress{
+    height: inherit;
+    background-color: tomato;
+    width: 0%;
+    border-radius:inherit;
+}
+
+.btn{
+    margin: 1rem 3rem;
+    border: none;
+    background-color: transparent;
+    color: #fff;
+    font-size: 1.5rem;
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.big{
+    font-size: 2rem;
+}
