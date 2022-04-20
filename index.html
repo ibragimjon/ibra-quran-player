@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Qur'an player</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./normalize.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -16,6 +17,9 @@
              alt="Abasa"
              id="cover">
             </div>
+            <form>
+                <input type="range" min="0" max="100" value="90" step="10"  id="volume">
+            </form>
             <!-- TIME -->
              <div class="time">
                  <span id="start">00:00</span>
@@ -28,6 +32,8 @@
 
              <!-- AUDIO -->
              <audio src="./surahs/Surah Abasa.mp3" id="audio"></audio>
+
+             
              <!--NAVBAR  -->
              <div class="nav">
                  <button class="btn" id="prev">
